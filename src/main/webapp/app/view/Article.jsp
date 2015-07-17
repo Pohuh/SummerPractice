@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: ооо
@@ -12,41 +13,46 @@
 </head>
 <body bgcolor="#cccccc">
 <center>
-  <form action="main.jsp" method="delete">
-    <p><input type="submit" value="Удалить"></p>
+  <form action="Delete" method="go">
+    <input name="id" type="hidden" value=${article.getId()}>
+    <input type="submit" value="Удалить">
   </form>
   <table border="2" bgcolor=#f9f0ef cellspacing="3" width="60%">
     <font color=#618c5e>
+      <jsp:useBean id="article" class="model.Table" scope="request"/>
       <tr>
         <td width="90%"  align="center">
           <font color=#618c5e>
-            ${getTitle}
+            ${article.getTitle()}
           </font>
         </td>
       </tr>
       <tr>
         <td align="center">
           <font color=#618c5e>
-            ${getText}
+            ${article.getText()}
           </font>
         </td>
       </tr>
+        <jsp:useBean id="CommentsList" class="java.util.ArrayList" scope="request"/>
+        <c:forEach items="${CommentsList}" var="cell">
       <tr>
         <td align="center">
           <font color=#618c5e>
-            Комментарии
+            ${cell.getComm()}
           </font>
         </td>
       </tr>
+        </c:forEach>
       <tr>
         <td align="center">
-          <p><b>Добавить комментарий</b></p>
-          <p><textarea rows="8" cols="80" name="text"></textarea></p>
-          <form action="Article.jsp" method="post">
-            <p><input type="submit" value="Отправить"></p>
+          <form action="Comments" method="go">
+            <input name="id" type="hidden" value=${article.getId()}>
+            Текст комментария<textarea rows="8" cols="200" name="comment"></textarea><br>
+            <input type="submit" value="Добавить комментарий">
           </form>
-          <form action="main.jsp" method="back">
-            <p><input id="back" type="submit" value="Назад"></p>
+          <form action="/Blog" method="go">
+            <p><input id="go" type="submit" value="Назад"></p>
           </form>
         </td>
       </tr>

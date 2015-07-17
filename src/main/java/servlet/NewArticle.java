@@ -24,6 +24,7 @@ public class NewArticle extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         title = request.getParameter("title");
+        text = request.getParameter("text");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
