@@ -55,12 +55,8 @@
                     </td>
                     <td align="center">
                         <form action="Article" method="go">
-<<<<<<< HEAD
                             <input name="id" type="hidden" value=${cell.getId()}>
                             <input name="idButton" type="submit" value="Перейти">
-=======
-                            <p><input id=${cell.getId()} type="submit" value="Перейти"></p>
->>>>>>> d6e8c1b6f415c4634dcb7e188a33d58bb1239aef
                         </form>
                     </td>
                 </tr>

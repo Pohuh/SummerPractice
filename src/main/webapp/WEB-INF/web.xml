@@ -13,7 +13,6 @@
         <servlet-class>servlet.Article</servlet-class>
     </servlet>
 
-<<<<<<< HEAD
     <servlet>
         <servlet-name>CommentServlet</servlet-name>
         <servlet-class>servlet.Comments</servlet-class>
@@ -29,8 +28,6 @@
         <servlet-class>servlet.Delete</servlet-class>
     </servlet>
 
-=======
->>>>>>> d6e8c1b6f415c4634dcb7e188a33d58bb1239aef
     <servlet-mapping>
         <servlet-name>mainServlet</servlet-name>
         <url-pattern>/c</url-pattern>
@@ -39,7 +36,6 @@
     <servlet-mapping>
         <servlet-name>articleServlet</servlet-name>
         <url-pattern>/a</url-pattern>
-<<<<<<< HEAD
     </servlet-mapping>
 
     <servlet-mapping>
@@ -55,8 +51,6 @@
     <servlet-mapping>
         <servlet-name>DeleteArc</servlet-name>
         <url-pattern>/da</url-pattern>
-=======
->>>>>>> d6e8c1b6f415c4634dcb7e188a33d58bb1239aef
     </servlet-mapping>
 
 </web-app>
