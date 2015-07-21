@@ -15,7 +15,7 @@ import java.sql.*;
 public class TableDaoImpl implements TableDao{
 
     @Override
-    public void addA(Table table, String title, String text) {
+    public void addA(String title, String text) {
         DBWorker worker = new DBWorker();
         String INSERT_NEW_A = "INSERT INTO articles (title, text) VALUES(?,?)";
         PreparedStatement preparedStatement = null;
@@ -31,7 +31,7 @@ public class TableDaoImpl implements TableDao{
     }
 
     @Override
-    public void addC(Table table, int idc, String comment) {
+    public void addC(int idc, String comment) {
 
         DBWorker worker = new DBWorker();
         String INSERT_NEW_C = "INSERT INTO comments (id_c, comm) VALUES(?,?)";
@@ -48,7 +48,7 @@ public class TableDaoImpl implements TableDao{
     }
 
     @Override
-    public void delete(Table table, int x) {
+    public void delete(int x) {
 
         DBWorker worker = new DBWorker();
         String DELETE = "DELETE FROM articles WHERE id=?";

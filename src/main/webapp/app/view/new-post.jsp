@@ -15,10 +15,10 @@
       <font color=#65789a size="6">
           <b>Новая запись</b>
       </font>
-      <form action="/NewArticle" method="create">
+      <form action="/NewPost" method="create">
           <div>
-              <p><input type="text" name="title"  value="" size="79" />
-              <p><textarea rows="30" cols="80" name="text"  class="rtext autosize focused" spellcheck="false" tabindex="1" maxlength="4000"></textarea></p>
+              <p><input type="text" name="title" id="name" value="" size="79" />
+              <p><textarea rows="30" cols="80" name="text" class="rtext autosize focused" spellcheck="false" tabindex="1" maxlength="30000"></textarea></p>
           </div>
           <div>
               <p><input id="create" type="submit" value="Создать запись"></p>

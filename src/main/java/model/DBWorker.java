@@ -15,7 +15,10 @@ public class DBWorker {
 
     private Connection connection = null;
 
+
+
     public DBWorker(){
+
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);

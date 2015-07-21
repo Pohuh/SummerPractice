@@ -1,8 +1,6 @@
 package model;
 
 import java.io.Serializable;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 
 /**
  * Created by ооо on 14.07.2015.

@@ -7,8 +7,8 @@ import model.Table;
  */
 public interface TableDao {
 
-    void addA(Table table, String title, String text);
-    void addC(Table table, int idc, String comment);
-    void delete(Table table, int x);
+    void addA(String title, String text);
+    void addC(int idc, String comment);
+    void delete(int x);
 
 }
