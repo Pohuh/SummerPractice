@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import static model.TableGet.*;
 
 /**
- * Created by ооо on 20.07.2015.
+ * Created by Pohuh on 16.07.2015.
  */
 @WebServlet("/Post")
 public class PostServlet extends HttpServlet {

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import static model.TableGet.tableA;
 
 /**
- * Created by ооо on 14.07.2015.
+ * Created by Pohuh on 14.07.2015.
  */
 @WebServlet("/Blog")
 public class MainPage extends HttpServlet {
@@ -31,6 +31,5 @@ public class MainPage extends HttpServlet {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/main.jsp");
             dispatcher.forward(request, response);
         }
-        //request.getRequestDispatcher("main.jsp").forward(request, response);
     }
 }

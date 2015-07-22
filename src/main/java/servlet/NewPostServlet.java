@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Created by ооо on 20.07.2015.
+ * Created by Pohuh on 16.07.2015.
  */
 @WebServlet("/NewPost")
 public class NewPostServlet extends HttpServlet {

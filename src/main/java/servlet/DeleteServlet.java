@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Created by ооо on 21.07.2015.
+ * Created by Pohuh on 17.07.2015.
  */
 @WebServlet("/Delete")
 public class DeleteServlet extends HttpServlet {
