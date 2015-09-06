@@ -1,11 +1,11 @@
-1) Для запуска приложение потребуется Идейка с настроенным Томкатом на стартовое окно http://localhost:8080/Blog
+1) To start the application required Intellij Idea with customized Tomkat on the start screen http://localhost:8080/Blog
 HTTP Port 8080
 JMX port 1099
 
-2) Базой данных является MySQL присоелиненная припомощи Connector J
+2) MySQL is a database attached using the Connector J
 
-3) Запросы обрабатываются внутри программы
-Скрипты создания бд:
+3) Requests are processed within the program
+The scripts create the database :
 
 CREATE DATABASE `hodor` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
